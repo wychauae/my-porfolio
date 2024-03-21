@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 
 
 export default function Background() {
-    const [ init, setInit ] = useState(false);
+    const [, setInit ] = useState(false);
 
     useEffect(() => {
         initParticlesEngine(async (engine : Engine) => {
@@ -19,6 +19,8 @@ export default function Background() {
         console.log(container);
     }, []);
 
+    const bgImg = '../assets/Images/bgImg.jpg';
+
     // @ts-ignore
     return (
         <Particles
@@ -29,6 +31,8 @@ export default function Background() {
                     color: {
                         value: "#121212",
                     },
+                    opacity:0.8,
+                    image:`url(${bgImg})`,
                 },
                 fpsLimit: 120,
                 interactivity: {

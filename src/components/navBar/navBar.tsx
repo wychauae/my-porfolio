@@ -29,12 +29,15 @@ export const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open
     open?: boolean;
 }>(({ theme, open }) => ({
     flexGrow: 1,
-    padding: theme.spacing(3),
+    //TODO remember to change to 3
+    // padding: theme.spacing(3),
+    padding: theme.spacing(0),
     transition: theme.transitions.create('margin', {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
     }),
-    marginLeft: `-${drawerWidth}px`,
+    //TODO uncomment
+    // marginLeft: `-${drawerWidth}px`,
     ...(open && {
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.easeOut,
@@ -65,7 +68,6 @@ export const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
 }));
@@ -83,7 +85,7 @@ export const NavBar = () => {
             height: '100vh',
         }}>
             <CssBaseline />
-            <AppBar position="fixed" open={open}>
+            <AppBar position="fixed" open={open} sx ={{background: "#202020"}}>
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -116,7 +118,7 @@ export const NavBar = () => {
                         px: [1],
                     }}
                 >
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: '20px'}}>
                         <Avatar src={myIcon} sx={{ width: 55, height: 55 }} />
                         <Typography variant="h6">My Portfolio</Typography>
                     </Box>

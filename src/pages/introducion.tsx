@@ -5,11 +5,6 @@ import avatar from "../assets/Images/myIcon.jpg";
 import {Avatar, Box, Grid, Typography} from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
-    avatar: {
-        width: 220,
-        height: 220,
-        margin: 12,
-    },
     title: {
         color: "orange",
     },
@@ -31,16 +26,23 @@ const useStyles = makeStyles((theme) => ({
 const Introduction = () => {
     const classes = useStyles();
 
+
+
     return (
         <Box className={classes.typedContainer}>
             <Grid container justifyContent="center">
-                <Avatar className={classes.avatar} src={avatar} alt="SAMUEL CHAU" />
+                <Avatar src={avatar}
+                        alt="SAMUEL CHAU"
+                        sx={{
+                            width: 220,
+                            height: 220,
+                }}/>
             </Grid>
-            <Typography className={classes.title} variant="h4">
+            <Typography className={classes.title} variant="h3">
                 <ReactTyped strings={["SAMUEL CHAU"]} typeSpeed={40} />
             </Typography>
 
-            <Typography className={classes.subtitle} variant="h5">
+            <Typography className={classes.subtitle} variant="h4">
                 <ReactTyped
                     strings={[
                         "I love programming !"

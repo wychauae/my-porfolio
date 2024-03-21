@@ -1,9 +1,10 @@
 import React from "react";
 import {Main, NavBar} from "../components/navBar/navBar";
-import {Box, Container, Toolbar} from "@mui/material";
+import {Box, Container} from "@mui/material";
 import Background from "./background";
 import Introduction from "./introducion";
 import { makeStyles } from '@mui/styles';
+import bgImg from "../assets/Images/bgImg.jpg";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -19,21 +20,23 @@ export default function Home() {
     return (
         //TODO:lift up the state/apply redux to the NavBar
         <Main open={false}>
-            <Box className={classes.root} sx={{ display: 'flex' }}>
+            <Box component="main"
+                 className={classes.root}
+                 sx={{
+                     flexGrow: 1,
+                     overflow: 'auto',
+                     height: "100%",
+                     width: "100%",
+                     backgroundImage: `url(${bgImg})`,
+                     backgroundSize: 'cover',
+                     backgroundRepeat: 'no-repeat',
+                     backgroundPosition: "center center",
+            }}>
                 <NavBar/>
-                <Box
-                    component="main"
-                    sx={{
-                        flexGrow: 1,
-                        overflow: 'auto',
-                    }}
-                >
-                    <Toolbar />
-                    <Container maxWidth="lg" sx={{ m: 1, p: 1}}>
-                        <Introduction/>
-                        <Background/>
-                    </Container>
-                </Box>
+                <Container maxWidth="lg" sx={{ m: 0, p: 0}}>
+                    <Introduction/>
+                    <Background/>
+                </Container>
             </Box>
         </Main>
     )
