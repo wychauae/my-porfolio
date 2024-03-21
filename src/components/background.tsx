@@ -4,7 +4,8 @@ import type { Container, Engine } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
 
 
-export default function Background() {
+// @ts-ignore
+export default function Background({opacity}) {
     const [, setInit ] = useState(false);
 
     useEffect(() => {
@@ -19,9 +20,6 @@ export default function Background() {
         console.log(container);
     }, []);
 
-    const bgImg = '../assets/Images/bgImg.jpg';
-
-    // @ts-ignore
     return (
         <Particles
             id="tsparticles"
@@ -31,8 +29,7 @@ export default function Background() {
                     color: {
                         value: "#121212",
                     },
-                    opacity:0.8,
-                    image:`url(${bgImg})`,
+                    opacity: opacity,
                 },
                 fpsLimit: 120,
                 interactivity: {

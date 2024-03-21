@@ -36,8 +36,7 @@ export const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
     }),
-    //TODO uncomment
-    // marginLeft: `-${drawerWidth}px`,
+    marginLeft: `-${drawerWidth}px`,
     ...(open && {
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.easeOut,
@@ -85,7 +84,7 @@ export const NavBar = () => {
             height: '100vh',
         }}>
             <CssBaseline />
-            <AppBar position="fixed" open={open} sx ={{background: "#202020"}}>
+            <AppBar position="fixed" open={open} sx ={{background: "#202020", opacity:1}}>
                 <Toolbar>
                     <IconButton
                         color="inherit"

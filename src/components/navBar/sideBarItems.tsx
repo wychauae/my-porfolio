@@ -15,39 +15,39 @@ export const sideBarItems = (
                 <ListItemIcon>
                     <HomeIcon style={{ fontSize: '2rem' }}/>
                 </ListItemIcon>
-                <ListItemText primary="HOME" />
+                <ListItemText primary="Home" />
             </ListItemButton>
         </Link>
-        <Link to="/profile" className="link-no-style">
+        <Link to="/aboutme" className="link-no-style">
             <ListItemButton>
                 <ListItemIcon>
                     <AccountCircleIcon style={{ fontSize: '2rem' }}/>
                 </ListItemIcon>
-                <ListItemText primary="RESUME" />
+                <ListItemText primary="About Me" />
             </ListItemButton>
         </Link>
-        <Link to="/game" className="link-no-style">
+        <Link to="/resume" className="link-no-style">
             <ListItemButton>
                 <ListItemIcon>
                     <SportsEsportsIcon style={{ fontSize: '2rem' }}/>
                 </ListItemIcon>
-                <ListItemText primary="PORTFOLIO" />
+                <ListItemText primary="Resume" />
             </ListItemButton>
         </Link>
-        <Link to="/" className="link-no-style">
+        <Link to="/porfolio" className="link-no-style">
             <ListItemButton>
                 <ListItemIcon>
                     <SignalCellularAltIcon style={{ fontSize: '2rem' }} />
                 </ListItemIcon>
-                <ListItemText primary="CONTACT" />
+                <ListItemText primary="Porfolio" />
             </ListItemButton>
         </Link>
-        <Link to="/" className="link-no-style">
+        <Link to="/contact" className="link-no-style">
             <ListItemButton>
                 <ListItemIcon>
                     <Groups3Icon style={{ fontSize: '2rem' }}/>
                 </ListItemIcon>
-                <ListItemText primary="SOCIAL" />
+                <ListItemText primary="Contact" />
             </ListItemButton>
         </Link>
     </React.Fragment>
