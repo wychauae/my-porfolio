@@ -10,7 +10,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import {Link} from "react-router-dom";
 export const sideBarItems = (
     <React.Fragment>
-        <Link to="/my-portfolio/home" className="link-no-style">
+        <Link to="/home" className="link-no-style">
             <ListItemButton>
                 <ListItemIcon>
                     <HomeIcon style={{ fontSize: '2rem' }}/>
@@ -18,7 +18,7 @@ export const sideBarItems = (
                 <ListItemText primary="Home" />
             </ListItemButton>
         </Link>
-        <Link to="/my-portfolio/aboutme" className="link-no-style">
+        <Link to="/aboutme" className="link-no-style">
             <ListItemButton>
                 <ListItemIcon>
                     <AccountCircleIcon style={{ fontSize: '2rem' }}/>

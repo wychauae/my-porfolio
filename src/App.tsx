@@ -5,13 +5,13 @@ import AboutMe from "../src/pages/aboutMePage/aboutMe"
 
 function App() {
   return (
-      //Remark: Deploy on Github using browserRouter will lead to routing bug
+      //Remark: Deploy on GitHub using browserRouter will lead to routing bug
       //use HashRouter instead
       // <BrowserRouter>
       <HashRouter>
           <Routes>
-              <Route path="/my-portfolio/home" element={ <Home/>} />
-              <Route path="/my-portfolio/aboutme" element={ <AboutMe/>} />
+              <Route path="/home" element={ <Home/>} />
+              <Route path="aboutme" element={ <AboutMe/>} />
               <Route path="/" element={<Home/> } />
               <Route path="*" element={ <Home/>} />
           </Routes>
