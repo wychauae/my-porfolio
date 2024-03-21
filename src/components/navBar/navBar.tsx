@@ -18,7 +18,6 @@ import myIcon from "../../assets/Images/myIcon.jpg";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import {sideBarItems} from "./sideBarItems";
 import './navBar.css';
-import {createContext} from "vm";
 
 const drawerWidth: number = 240;
 
