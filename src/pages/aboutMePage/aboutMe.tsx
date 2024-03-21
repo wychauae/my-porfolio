@@ -1,13 +1,10 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {Box, Typography} from "@mui/material";
 import {Main, NavBar} from "../../components/navBar/navBar";
 import {makeStyles} from "@mui/styles";
 import spaceMan from "../../assets/Images/spaceman.png";
-import './aboutMe.css';
 import Background from "../../components/background";
 import bgImg from "../../assets/Images/aboutMeBG.jpg";
-
-
 
 
 const useStyles = makeStyles((theme) => ({
@@ -37,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     bigTitle: {
         position: 'fixed',
         top: '10%',
-        left: '5%',
+        left: '2%',
         right: "0%",
         color: 'white',
         opacity: 0.5,
@@ -56,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         backdropFilter: 'blur(4px)',
         position: 'absolute',
-        top: '10rem',
+        top: '11rem',
         fontStyle: 'italic',
     }
 }));
