@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { makeStyles } from '@mui/styles';
-import avatar from "../assets/Images/myIcon.jpg";
+import avatar from "../../assets/Images/myIcon.jpg";
 import {Avatar, Box, Grid, Typography} from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({

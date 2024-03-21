@@ -1,10 +1,10 @@
 import React from "react";
-import {Main, NavBar} from "../components/navBar/navBar";
+import {Main, NavBar} from "../../components/navBar/navBar";
 import {Box, Container} from "@mui/material";
 import Background from "./background";
 import Introduction from "./introducion";
 import { makeStyles } from '@mui/styles';
-import bgImg from "../assets/Images/bgImg.jpg";
+import bgImg from "../../assets/Images/bgImg.jpg";
 
 
 const useStyles = makeStyles((theme) => ({
