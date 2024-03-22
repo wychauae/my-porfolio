@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.d9f830ab.css",
-    "main.js": "/my-portfolio/static/js/main.8d50eddd.js",
+    "main.js": "/my-portfolio/static/js/main.96b88bd5.js",
     "static/js/1927.4375e0d0.chunk.js": "/my-portfolio/static/js/1927.4375e0d0.chunk.js",
     "static/js/2747.656992dd.chunk.js": "/my-portfolio/static/js/2747.656992dd.chunk.js",
     "static/js/3714.ba5b1e89.chunk.js": "/my-portfolio/static/js/3714.ba5b1e89.chunk.js",
@@ -103,9 +103,10 @@
     "static/media/aboutMeBG.jpg": "/my-portfolio/static/media/aboutMeBG.e1a55733df54640c5b51.jpg",
     "static/media/UbuntuMono-BoldItalic.ttf": "/my-portfolio/static/media/UbuntuMono-BoldItalic.cd621bc572ef4231a7ab.ttf",
     "static/media/spaceman.png": "/my-portfolio/static/media/spaceman.2c461c68d9359ed6bdb1.png",
+    "static/media/taking-off-rocket-drawing-transparenth.png": "/my-portfolio/static/media/taking-off-rocket-drawing-transparenth.0a08e1d475606805f49f.png",
     "index.html": "/my-portfolio/index.html",
     "main.d9f830ab.css.map": "/my-portfolio/static/css/main.d9f830ab.css.map",
-    "main.8d50eddd.js.map": "/my-portfolio/static/js/main.8d50eddd.js.map",
+    "main.96b88bd5.js.map": "/my-portfolio/static/js/main.96b88bd5.js.map",
     "1927.4375e0d0.chunk.js.map": "/my-portfolio/static/js/1927.4375e0d0.chunk.js.map",
     "2747.656992dd.chunk.js.map": "/my-portfolio/static/js/2747.656992dd.chunk.js.map",
     "3714.ba5b1e89.chunk.js.map": "/my-portfolio/static/js/3714.ba5b1e89.chunk.js.map",
@@ -205,6 +206,6 @@
   },
   "entrypoints": [
     "static/css/main.d9f830ab.css",
-    "static/js/main.8d50eddd.js"
+    "static/js/main.96b88bd5.js"
   ]
 }
