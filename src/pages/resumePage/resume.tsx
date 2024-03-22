@@ -9,15 +9,15 @@ import {TimelineItemBuild} from "./timelineItem";
 const useStyles = makeStyles((theme: Theme) => ({
     workExperienceTimeline: {
         position: "absolute",
-        top: "50%",
-        left: "50%",
+        top: "50vh",
+        left: "50vw",
         transform: "translate(-50%,-50%)",
         width: "100vw",
         backgroundColor: "#233",
         flex: '1 1 auto',
         overflow: 'auto',
         padding: '1rem',
-        '@media (max-width: 600px)': {
+        '@media (max-width: 900px)': {
             top: "90%",
         },
     },
@@ -42,8 +42,9 @@ export default function Resume() {
                  sx={{
                      flexGrow: 1,
                      overflow: 'auto',
-                     display: 'flex',
-                     height: "100%",
+                     display: 'grid',
+                     gridTemplateRows: '10% 1fr',
+                     height: "100vh",
                      width: "100%",
                      backgroundColor: "#233",
                      backgroundSize: 'cover',

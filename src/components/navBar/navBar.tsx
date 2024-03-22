@@ -81,7 +81,8 @@ export const NavBar = () => {
     return (
         <Box sx={{
             display: 'flex',
-            height: '100vh',
+            //TODO overflow issue
+            // height: '100vh',
         }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} sx ={{background: "#202020", opacity:1}}>

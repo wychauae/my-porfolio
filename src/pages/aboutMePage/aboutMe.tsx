@@ -67,6 +67,7 @@ export default function AboutMe() {
         <Main open={false}>
             <Box component="main"
                  sx={{
+                     height: "100vh",
                      flexGrow: 1,
                      overflow: 'auto',
                      display: 'flex',

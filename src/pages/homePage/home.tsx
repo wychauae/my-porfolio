@@ -25,7 +25,7 @@ export default function Home() {
                  sx={{
                      flexGrow: 1,
                      overflow: 'auto',
-                     height: "100%",
+                     height: "100vh",
                      width: "100%",
                      backgroundImage: `url(${bgImg})`,
                      backgroundSize: 'cover',

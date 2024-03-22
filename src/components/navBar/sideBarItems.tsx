@@ -34,7 +34,7 @@ export const sideBarItems = (
                 <ListItemText primary="Resume" />
             </ListItemButton>
         </Link>
-        <Link to="/porfolio" className="link-no-style">
+        <Link to="/portfolio" className="link-no-style">
             <ListItemButton>
                 <ListItemIcon>
                     <SignalCellularAltIcon style={{ fontSize: '2rem' }} />
@@ -42,13 +42,13 @@ export const sideBarItems = (
                 <ListItemText primary="Porfolio" />
             </ListItemButton>
         </Link>
-        <Link to="/contact" className="link-no-style">
-            <ListItemButton>
-                <ListItemIcon>
-                    <Groups3Icon style={{ fontSize: '2rem' }}/>
-                </ListItemIcon>
-                <ListItemText primary="Contact" />
-            </ListItemButton>
-        </Link>
+        {/*<Link to="/contact" className="link-no-style">*/}
+        {/*    <ListItemButton>*/}
+        {/*        <ListItemIcon>*/}
+        {/*            <Groups3Icon style={{ fontSize: '2rem' }}/>*/}
+        {/*        </ListItemIcon>*/}
+        {/*        <ListItemText primary="Contact" />*/}
+        {/*    </ListItemButton>*/}
+        {/*</Link>*/}
     </React.Fragment>
 );
